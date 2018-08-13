@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+
+    <TextView
+        android:id="@+id/textViewMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginTop="@dimen/x108"
+        android:textColor="@color/gray"
+        android:drawablePadding="@dimen/x15"
+        android:drawableTop="@mipmap/profile_img_fb_dis"
+        android:textSize="@dimen/x16"
+        android:includeFontPadding="false"
+        android:gravity="center_horizontal" />
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/x14"
+        android:includeFontPadding="false"
+        android:textColor="@color/gray_light"
+        android:layout_marginTop="@dimen/x16"/>
+
+    <Button
+        android:id="@+id/buttonEmpty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/x16"
+        android:includeFontPadding="false"
+        android:text="empty_button" />
+</LinearLayout>

@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tvCustomToast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toast_custom_common_bg"
+        android:gravity="center"
+        android:padding="@dimen/x15"
+        android:minWidth="@dimen/x180"
+        android:minHeight="@dimen/x44"
+        android:textColor="@color/white"
+        android:textSize="@dimen/x15"
+        android:includeFontPadding="false"/>
+</LinearLayout>

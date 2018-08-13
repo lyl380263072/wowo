@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="@dimen/x24"
+    android:layout_marginTop="@dimen/x100"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backround_white">
+
+        <com.wowo.wowo.Views.CircleImageView.CircleImageView
+            android:id="@+id/dialog_group_code_ci_head"
+            android:layout_width="@dimen/x160"
+            android:layout_height="@dimen/x160"
+            android:layout_gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="@dimen/x50"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_marginTop="@dimen/x40"
+            android:src="@mipmap/addressbook" />
+
+        <TextView
+            android:id="@+id/dialog_group_code_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/dialog_group_code_ci_head"
+            android:includeFontPadding="false"
+            android:text="？？？？"
+            android:layout_marginBottom="@dimen/x100"
+            android:layout_marginTop="@dimen/x100"
+            android:layout_marginLeft="@dimen/x40"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/x36" />
+
+        <ImageView
+            android:id="@+id/dialog_group_code_iv_code"
+            android:layout_width="@dimen/x520"
+            android:layout_height="@dimen/x520"
+            android:layout_below="@id/dialog_group_code_ci_head"
+            android:background="@mipmap/welcome"
+            android:includeFontPadding="false"
+            android:layout_marginBottom="@dimen/x30"
+            android:textColor="@color/text_black"
+            android:layout_centerHorizontal="true" />
+
+
+        <com.wowo.wowo.Views.TextView.JustifyTextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_group_code_iv_code"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/x30"
+            android:layout_marginTop="@dimen/x20"
+            android:includeFontPadding="false"
+            android:text="扫描二维码即可快速进群"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/x30" />
+
+        <TextView
+            android:id="@+id/dialog_tv_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x120"
+            android:layout_below="@+id/text"
+            android:background="@drawable/stroke_line_top"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/x36" />
+    </RelativeLayout>
+</LinearLayout>

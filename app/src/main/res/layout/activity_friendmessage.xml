@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/friend_tv_inviten"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x110"
+            android:drawableLeft="@mipmap/addpeople"
+            android:drawablePadding="@dimen/x24"
+            android:gravity="center_vertical"
+            android:padding="@dimen/x24"
+            android:text="@string/invitefriend"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/x32" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x24"
+            android:background="@color/line_gray" />
+
+        <TextView
+            android:id="@+id/friend_tv_friendlist"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x110"
+            android:drawableLeft="@mipmap/addressbook"
+            android:drawablePadding="@dimen/x24"
+            android:gravity="center_vertical"
+            android:padding="@dimen/x24"
+            android:text="@string/friendlist"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/x32" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x24"
+            android:background="@color/line_gray" />
+    </LinearLayout>
+
+
+</LinearLayout>

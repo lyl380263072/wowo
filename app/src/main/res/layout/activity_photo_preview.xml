@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x68"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/pre_ll"
+            android:layout_width="@dimen/x60"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x16"
+            android:gravity="bottom"
+            android:onClick="backBtn">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="@dimen/x10"
+                android:layout_height="@dimen/x18"
+                android:layout_marginBottom="@dimen/x12"
+                android:src="@mipmap/nav_iocn_back_foucs" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/pre_ll"
+            android:layout_marginBottom="@dimen/x10"
+            android:text="预览"
+            android:textColor="@color/gray"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/x11"
+            android:text="1/8"
+            android:textColor="@color/gray"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    <View
+        android:id="@+id/pre_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/line_gray"
+        android:layout_below="@id/titlebar"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/x20"
+        android:layout_marginBottom="@dimen/x20"
+        android:layout_below="@id/pre_line" />
+</RelativeLayout>

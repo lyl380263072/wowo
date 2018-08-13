@@ -1,0 +1,53 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_layout"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/x24"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/x30"
+        android:layout_marginBottom="@dimen/x30"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/friendlist"
+            android:textSize="@dimen/x28"
+            android:layout_marginRight="@dimen/x32"
+            android:textColor="@color/text_black"/>
+        <EditText
+            android:id="@+id/title_layout_search_search_et"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/x64"
+            android:layout_toLeftOf="@+id/title_layout_search_iv_search"
+            android:cursorVisible="false"
+            android:paddingLeft="@dimen/x24"
+            android:maxLines="1"
+            android:hint="搜索"
+            android:textSize="@dimen/x22"
+            android:textColor="@color/text_black"
+            android:textColorHint="@color/gray_light"
+            android:background="@drawable/backround_search"/>
+        <TextView
+            android:id="@+id/flist_tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:textSize="@dimen/x28"
+            android:paddingRight="@dimen/x24"
+            android:paddingLeft="@dimen/x40"
+            android:textColor="@color/text_black"/>
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/friend_rc_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

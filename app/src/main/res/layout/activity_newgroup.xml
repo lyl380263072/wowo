@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/x24"
+        android:paddingRight="@dimen/x24">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.wowo.wowo.Views.CircleImageView.CircleImageView
+                android:id="@+id/group_ic_head"
+                android:layout_width="@dimen/x160"
+                android:layout_height="@dimen/x160"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/x30"
+                android:layout_marginTop="@dimen/x30"
+                android:src="@mipmap/addressbook" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/x40"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:gravity="center"
+                    android:text="@string/edit_groupname"
+                    android:textColor="@color/gray_light"
+                    android:textSize="@dimen/x32" />
+
+                <EditText
+                    android:id="@+id/group_et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="@dimen/x24"
+                    android:background="@null"
+                    android:gravity="left"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/x32" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x1"
+                    android:layout_marginTop="@dimen/x16"
+                    android:background="@color/line_gray" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x60"
+            android:text="@string/introduce_group"
+            android:textColor="@color/gray_light"
+            android:textSize="@dimen/x26" />
+
+        <EditText
+            android:id="@+id/group_et_introduce"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x260"
+            android:layout_marginTop="@dimen/x24"
+            android:gravity="top|left"
+            android:background="@drawable/backround_et_garyline"
+            android:paddingLeft="@dimen/x24"
+            android:paddingRight="@dimen/x24"
+            android:textColor="@color/text_black"
+            android:layout_marginBottom="@dimen/x40"
+            android:textSize="@dimen/x28" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x24"
+        android:background="@color/line_gray" />
+</LinearLayout>

@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">wowo</string>
+    <string name="action_settings">Settings</string>
+    <string name="loading_string">正在加载</string>
+    <string name="agreement">Android是一种基于Linux的自由及开放源代码的操作系统，主要使用于移动设备，如智能手机和平板电脑，由Google公司和开放手机联盟领导及开发。尚未有统一中文名称，中国大陆地区较多人使用“安卓”或“安致”。Android操作系统最初由Andy Rubin开发，主要支持手机。2005年8月由Google收购注资。2007年11月，Google与84家硬件制造商、软件开发商及电信营运商组建开放手机联盟共同研发改良Android系统。随后Google以Apache开源许可证的授权方式，发布了Android的源代码。第一部Android智能手机发布于2008年10月。Android逐渐扩展到平板电脑及其他领域上，如电视、数码相机、游戏机等。2011年第一季度，Android在全球的市场份额首次超过塞班系统，跃居全球第一。 2013年的第四季度，Android平台手机的全球市场份额已经达到78.1%。 [1]  2013年09月24日谷歌开发的操作系统Android在迎来了5岁生日，全世界采用这款系统的设备数量已经达到10亿台。</string>
+    <string name="homepage">首页</string>
+    <string name="friends">朋友</string>
+    <string name="watchingfocus">看点</string>
+    <string name="mine">我的</string>
+    <string name="friend">好友</string>
+    <string name="group">社群</string>
+    <string name="group_hot">热门社群</string>
+    <string name="invitefriend">邀请朋友</string>
+    <string name="friendlist">好友列表</string>
+    <string name="qq">QQ</string>
+    <string name="wechat">微信</string>
+    <string name="cancel">取消</string>
+    <string name="sure">确定</string>
+    <string name="nickname">昵称：</string>
+    <string name="remake">备注：</string>
+    <string name="remake_edit">备注编辑</string>
+    <string name="delete_friend">删除好友</string>
+    <string name="intro">简介</string>
+    <string name="group_code">群二维码</string>
+    <string name="shield_message">屏蔽消息</string>
+    <string name="group_members">社群成员</string>
+    <string name="exit_group">退出社群</string>
+    <string name="new_group">新建群组</string>
+    <string name="my_group">我的群组</string>
+    <string name="edit_groupname">清编辑社群名称</string>
+    <string name="introduce_group">可以增加一段话来介绍你的社群</string>
+</resources>

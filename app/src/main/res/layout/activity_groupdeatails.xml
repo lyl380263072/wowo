@@ -1,0 +1,193 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/x64"
+                android:paddingRight="@dimen/x24">
+
+                <com.wowo.wowo.Views.CircleImageView.CircleImageView
+                    android:layout_width="@dimen/x160"
+                    android:layout_height="@dimen/x160"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/x30"
+                    android:layout_marginTop="@dimen/x30"
+                    android:src="@mipmap/addressbook" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:gravity="center"
+                        android:text="@string/group"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/x32" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="@dimen/x24"
+                        android:gravity="center"
+                        android:text="666成员"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/x26" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/x24"
+                    android:paddingRight="@dimen/x24"
+                    android:text="@string/intro"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/x32" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:maxLength="200"
+                    android:paddingLeft="@dimen/x24"
+                    android:paddingRight="@dimen/x24"
+                    android:text="@string/agreement"
+                    android:textColor="@color/gray_light"
+                    android:textSize="@dimen/x30" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x24"
+                    android:background="@color/line_gray" />
+
+                <TextView
+                    android:id="@+id/group_tv_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x88"
+                    android:drawableRight="@mipmap/code"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/x64"
+                    android:paddingRight="@dimen/x36"
+                    android:text="@string/group_code"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/x32" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x1"
+                    android:background="@color/line_gray" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x88"
+                    android:paddingRight="@dimen/x24"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="@dimen/x88"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/x64"
+                        android:text="@string/shield_message"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/x32" />
+
+                    <CheckBox
+                        android:id="@+id/group_cb_shield"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right|center_vertical"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/group_tv_exit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x88"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/x64"
+                    android:paddingRight="@dimen/x24"
+                    android:text="@string/exit_group"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/x32" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x24"
+                    android:background="@color/line_gray" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x108"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/group_members"
+                        android:textColor="@color/gray_light"
+                        android:paddingLeft="@dimen/x24"
+                        android:textSize="@dimen/x30"
+
+                        android:layout_gravity="center_vertical"/>
+                    <EditText
+                        android:id="@+id/title_layout_search_search_et"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="@dimen/x64"
+                        android:layout_toLeftOf="@+id/title_layout_search_iv_search"
+                        android:cursorVisible="false"
+                        android:paddingLeft="@dimen/x24"
+                        android:layout_marginRight="@dimen/x40"
+                        android:layout_marginLeft="@dimen/x40"
+                        android:maxLines="1"
+                        android:hint="输入关键字搜索"
+                        android:textSize="@dimen/x22"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/text_black"
+                        android:textColorHint="@color/gray_light"
+                        android:background="@drawable/backround_search"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cancel"
+                        android:textColor="@color/gray_light"
+                        android:paddingRight="@dimen/x24"
+                        android:textSize="@dimen/x30"
+                        android:layout_gravity="center_vertical"/>
+                </LinearLayout>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/group_rc_members"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

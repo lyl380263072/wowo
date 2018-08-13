@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/dialog_bottom_qq"
+                android:layout_width="0dp"
+                android:paddingTop="@dimen/x40"
+                android:paddingBottom="@dimen/x40"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:onClick="widgetClick"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/qq" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x32"
+                    android:includeFontPadding="false"
+                    android:text="@string/qq"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/x22" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/dialog_bottom_wx"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/x40"
+                android:onClick="widgetClick"
+                android:paddingTop="@dimen/x40"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/weichat"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x32"
+                    android:textSize="@dimen/x22"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/text_black"
+                    android:text="@string/wechat"/>
+            </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x24"
+        android:background="@color/line_gray"/>
+    <TextView
+        android:id="@+id/dialog_tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x100"
+        android:textColor="@color/text_black"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="@string/rc_cancel"/>
+</LinearLayout>

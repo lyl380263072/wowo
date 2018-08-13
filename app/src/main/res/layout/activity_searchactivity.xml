@@ -1,0 +1,70 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/main_color"
+        android:layout_height="@dimen/x80"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/main_color"
+        android:layout_height="@dimen/x80">
+        <LinearLayout
+            android:id="@+id/title_layout_search_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x24"
+            android:onClick="backBtn"
+            android:gravity="bottom">
+            <ImageView
+                android:layout_width="@dimen/x60"
+                android:layout_height="@dimen/x36"
+                android:layout_marginBottom="@dimen/x24"
+                android:src="@mipmap/back"/>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/title_layout_search_back"
+            android:layout_alignParentBottom="true">
+
+            <EditText
+                android:id="@+id/title_layout_search_search_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/title_layout_search_iv_search"
+                android:cursorVisible="false"
+                android:paddingLeft="@dimen/x24"
+                android:maxLines="1"
+                android:hint="搜索"
+                android:textSize="@dimen/x28"
+                android:textColor="@color/white"
+                android:theme="@style/MyEditText"
+                android:textColorHint="@color/white"/>
+
+            <ImageView
+                android:id="@+id/title_layout_search_iv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/x10"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/x24"
+                android:src="@mipmap/sea_white" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+    </ScrollView>
+</LinearLayout>
